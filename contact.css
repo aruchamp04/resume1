@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    max-width:500px;
+    box-shadow:2px 2px 8px 9px lavender;
+    padding:45px;
+}
+form div{
+    position: relative;
+}
+
+.title{
+    font-size:2.6rem;
+    font-weight: bold;
+    margin-bottom:7%;
+}
+form div input , textarea{
+    width:100%;
+    border-radius:10px;
+    height:45px;
+    outline: none;
+    padding: 0 10%;
+    box-shadow:2px 2px 5px 5px lavender;
+
+}
+input:focus ,textarea:focus{
+    border:2px solid green;
+}
+form div textarea{
+    font-size:1.1rem;
+}
+form div textarea::placeholder{
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-bottom:4%;
+}
+form div i{
+    position: absolute;
+    padding:3.8%
+}
+ button{
+    width:100%;
+    padding:3%;
+    margin-top:4%;
+    font-weight: bold;
+    background-color:lightpink;
+}
+button:hover{
+    background-color: lightgreen;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.loop a{
+    text-decoration: none;
+    font-size:1rem;
+    color: darkmagenta;
+    }
+.btn{
+    background-color:khaki;
+    border: none;
+    font-size: 1.1rem;
+}
+.btn:hover{
+    background-color:khaki;
+    box-shadow:inset 2px 2px 5px 5px green;
+    
+}
+.message{
+    height:10vh;
+    text-align:left;
+    
+}

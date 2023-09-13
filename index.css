@@ -1,0 +1,356 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    scroll-behavior:smooth;
+    background:black;
+}
+.name{
+    font-size:1.9rem;
+    color:aquamarine;
+    padding:3%;
+    
+}
+      
+.hide{
+    color:cornsilk;
+    font-size: 20px;
+    text-shadow: 2px 2px 7px whitesmoke;
+    text-align: center;
+    opacity: 0.6;
+}
+.hide:hover{
+    opacity: 1;
+}
+
+.bts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resu , .res{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:seashell;
+}
+.btn-h:hover{
+    
+    background-color:deeppink;
+    transition: 1.1s;
+}
+.greet{
+    animation-name: colorful;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+} 
+@keyframes colorful {
+    10%,30%{
+        color:chartreuse;
+    }
+    20%,40%{
+        color:hotpink
+    }
+    50%,70%{
+        color:coral;
+    }
+    60%,80%{
+        color: khaki;
+    }
+    90%,100%{
+        color:aliceblue;
+    }
+}
+
+.background-clip{
+    position:fixed;
+    max-width:100vw;
+    min-height: 100vh;
+    opacity: 0.9;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(0,0, 0, 0.8);
+    overflow-y: hidden;
+}
+.blank{
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap:4%;
+    padding:2%;
+    font-size:1.2rem;
+    
+}
+
+li{
+    list-style-type: none;
+    
+}
+li a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+li a:hover{
+    color:aqua;
+}
+li a::after{
+    content: " ";
+    width:100%;
+    height:4px;
+    background-color:crimson;
+    transform: scaleX(0);
+    transition: transform 400ms;
+    transform-origin: right;
+    display: block;
+}
+li a:hover::after{
+    transform: scaleX(1);
+    transform-origin:left;
+}
+/* greet design */
+main div .greet{
+    font-size: 9.5rem;
+    color:whitesmoke;
+    padding:0.1% 6.5%;
+    text-shadow: 2px 2px 9px darkmagenta;
+    font-family: "Merienda",serif;
+    
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 5%;
+    margin-bottom:2%;
+    gap:5%;
+
+}
+.icons i{
+    font-size: 2.6rem;
+}
+.red{
+    color:rgba(255, 0, 0, 0.701)
+}
+.blue{
+    color:blue;
+}
+.black{
+    color:black;
+}
+
+/* about diesgn */
+
+.about-page{
+    
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding:4% 7%;
+
+}
+.about-page .heading{
+    font-size:4rem;
+    color:lightcoral;
+    font-weight:lighter;
+    
+}
+.about-page p{
+    font-size: 2rem;
+    margin:4%;
+}
+.about-page-one{
+    margin: 4%;
+}
+
+.profile{
+    width:55%;
+}
+
+.pe{
+    color: white;
+}
+.box {
+    
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+    padding: 4% 7%;
+}
+
+.skills img{
+    width:50%;
+}
+.skills{
+    margin: 3%;
+}
+.assemble{
+    font-size: 4rem;
+    color:lightcoral;
+    font-weight: lighter;
+    margin-left:9.5%;
+}
+.hob-tit{
+    font-size: 4rem;
+    color:lightcoral;
+    font-weight: lighter;
+    margin-left:9.5%;
+
+}
+.hob-card{
+    padding:4% 6%;
+}
+.all{
+    width:20%;
+    text-align: center;
+}
+.card{
+    background-color:rgba(0,0,0,0.2);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.car:hover{
+    transition:1s;
+    transform: scale(1.11);
+    background-color:#C0C0C0;
+    color:black;
+}
+.card-title{
+    color:greenyellow;
+}
+.grade{
+    font-size: 4rem;
+    color:lightcoral;
+    font-weight: lighter;
+    margin-top: 5%;
+    margin-left:3%;
+}
+.tvs-one{
+    width:55%;
+}
+.tvs{
+    width:40%;
+}
+.awards{
+    padding: 4% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.card-body  .j{
+    color:darkorange;
+    font-size:20px;
+}
+
+.quote h1{
+    text-align: center;
+    color:darkkhaki;
+    font-size:1.3rem;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.foot {
+    border: none;
+    border-radius:10%;
+    box-shadow:2px 2px 4px 4px whitesmoke;
+    outline: none;
+    
+}
+.counter h2{
+    color:moccasin;
+    font-size:1rem;
+    text-align: center;
+    margin:2%;
+}
+ .counter  .count{
+    color:red;
+}
+
+@media (max-width:1150px) {
+    body{
+        overflow-x: hidden;
+
+    }
+    .background-clip{
+        object-fit: cover;
+        width: 100%;
+    }
+    .blank{
+        background-color: rgba(40,0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main div .greet{
+        font-size:5rem;
+        text-align: center;
+        margin-top:9%;
+    }
+    .icons{
+        margin-top:10%;
+        gap:10%;
+    }
+    .bts{
+        margin: 4%;
+    }
+    .about-page{
+        display: block;
+        text-align: center;
+    }
+    .image .profile{
+        width:40%;
+    }
+    .about-page-one .pe{
+        font-size: 1.2rem;
+    }
+    .assemble{
+        text-align: center;
+
+    }
+    .skills img{
+      width:80%;    
+    
+    }
+    .skills .hide{
+        display: none;
+    }
+    .hob-tit{
+        text-align: center;
+    }
+.awards{
+    display: block;
+}
+
+.awards .m{
+    margin:4.5%;
+}
+.grade{
+    font-size:2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.quote h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+@media  (min-width:800px) {
+    .awards{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+} }
